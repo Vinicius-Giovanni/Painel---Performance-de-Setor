@@ -12,7 +12,7 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"dBox\",\"dCalendario\",\"dHeadcount\",\"dHora\",\"dZona\",\"niveis\",\"fstatus_olpn_ed\",\"fstatus_olpn_periodic\",\"Medidas\",\"dHora_agora\",\"fpedidos_cancelados_ed\",\"fpedidos_cancelado_periodic\",\"fprodutividade_picking_periodic\",\"fprodutividade_picking_ed\",\"fprodutividade_putaway_periodic\",\"fprodutividade_putaway_ed\",\"fProdutividade\"]"
+        "value": "[\"dBox\",\"dCalendario\",\"dHeadcount\",\"dHora\",\"dZona\",\"niveis\",\"fstatus_olpn_ed\",\"fstatus_olpn_periodic\",\"Medidas\",\"dHora_agora\",\"fpedidos_cancelados_ed\",\"fpedidos_cancelado_periodic\",\"fprodutividade_picking_periodic\",\"fprodutividade_picking_ed\",\"fprodutividade_putaway_periodic\",\"fprodutividade_putaway_ed\",\"fProdutividade\",\"fConferencia\"]"
       },
       {
         "name": "PBI_ProTooling",
@@ -568,6 +568,16 @@
                   {
                     "semana do mê": {
                       "State": "Generated"
+                    }
+                  },
+                  {
+                    "Semana": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -1255,6 +1265,189 @@
                   }
                 ]
               },
+              "f_conferencia": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fConferencia"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "f conferencia": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "fConferencia": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "f_conferencia.data_LOAD": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fConferencia",
+                    "ConceptualProperty": "Data LOAD"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data LOAD": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "LOAD": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "information load": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "fact load": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "info load": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "statistic load": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "document load": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "figure load": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "record load": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "data cargo": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "data consignment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "data shipment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  }
+                ]
+              },
+              "f_conferencia.dif": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fConferencia",
+                    "ConceptualProperty": "dif"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dif": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "f_conferencia.olpn": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fConferencia",
+                    "ConceptualProperty": "OLPN"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "olpn": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
               "f_produtividade": {
                 "Definition": {
                   "Binding": {
@@ -1420,10 +1613,7 @@
                       "Weight": 0.97
                     }
                   }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
+                ]
               },
               "fpedidos_cancelado_periodic": {
                 "Definition": {
@@ -2746,7 +2936,10 @@
                       "Weight": 0.97
                     }
                   }
-                ]
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
               },
               "fprodutividade_picking_periodic.order_ID": {
                 "Definition": {
@@ -3939,6 +4132,22 @@
                   }
                 ]
               },
+              "fstatus_olpn_periodic.atraso": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fstatus_olpn_periodic",
+                    "ConceptualProperty": "atraso"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "atraso": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
               "fstatus_olpn_periodic.box": {
                 "Definition": {
                   "Binding": {
@@ -4373,6 +4582,36 @@
                   }
                 ]
               },
+              "fstatus_olpn_periodic.dt_pedido": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fstatus_olpn_periodic",
+                    "ConceptualProperty": "dt_pedido"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dt pedido": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "dt_pedido": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  }
+                ]
+              },
               "fstatus_olpn_periodic.etapa": {
                 "Definition": {
                   "Binding": {
@@ -4786,6 +5025,29 @@
                   }
                 ]
               },
+              "fstatus_olpn_periodic.pedido_venda": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fstatus_olpn_periodic",
+                    "ConceptualProperty": "pedido_venda"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "pedido venda": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "pedido_venda": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
               "fstatus_olpn_periodic.qt_pcs": {
                 "Definition": {
                   "Binding": {
@@ -5160,6 +5422,22 @@
                   }
                 ]
               },
+              "fstatus_olpn_periodic.tarefa": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fstatus_olpn_periodic",
+                    "ConceptualProperty": "Tarefa"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "tarefa": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
               "fstatus_olpn_periodic.tarefa_status": {
                 "Definition": {
                   "Binding": {
@@ -5341,6 +5619,122 @@
                   {
                     "vol": {
                       "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "fstatus_olpn_periodic.wave": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fstatus_olpn_periodic",
+                    "ConceptualProperty": "Wave"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "wave": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "groundswell": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "tendency": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "movement": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "breaker": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "roller": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "upsurge": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "trend": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "surge": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "flood": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "surf": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
                     }
                   }
                 ]
@@ -6062,22 +6456,6 @@
                   }
                 ]
               },
-              "medida.forecasting": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Medidas",
-                    "ConceptualProperty": "forecasting"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "forecasting": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
               "medida.hora_tratada": {
                 "Definition": {
                   "Binding": {
@@ -6193,7 +6571,7 @@
                     }
                   },
                   {
-                    "T/M Conferência": {
+                    "T/M Puxada": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -6204,6 +6582,49 @@
                   },
                   {
                     "Tempo Médio | Puxada": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "medida.media_confe_v_2_base": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "media_confe_v2_base"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "media confe v 2 base": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "media_confe_v2_base": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "T/M Conferência": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Tempo Médio | Conferência": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -6507,7 +6928,7 @@
                     }
                   },
                   {
-                    "T/M Tarefa": {
+                    "T/M Separação": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -7376,7 +7797,7 @@
                     }
                   },
                   {
-                    "Abastecimento de Lojas": {
+                    "Lead Time | Abastecimento de Lojas": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -8957,6 +9378,105 @@
                 },
                 "State": "Generated"
               },
+              "f_conferencia_has_data_LOAD": {
+                "Binding": {
+                  "ConceptualEntity": "fConferencia"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_conferencia.data_LOAD"
+                      },
+                      "Subject": {
+                        "Role": "f_conferencia"
+                      }
+                    },
+                    "ID": "f_conferencias_have_data_LOADs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_conferencia": {
+                    "Target": {
+                      "Entity": "f_conferencia"
+                    }
+                  },
+                  "f_conferencia.data_LOAD": {
+                    "Target": {
+                      "Entity": "f_conferencia.data_LOAD"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_conferencia_has_dif": {
+                "Binding": {
+                  "ConceptualEntity": "fConferencia"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_conferencia.dif"
+                      },
+                      "Subject": {
+                        "Role": "f_conferencia"
+                      }
+                    },
+                    "ID": "f_conferencias_have_difs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_conferencia": {
+                    "Target": {
+                      "Entity": "f_conferencia"
+                    }
+                  },
+                  "f_conferencia.dif": {
+                    "Target": {
+                      "Entity": "f_conferencia.dif"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_conferencia_has_olpn": {
+                "Binding": {
+                  "ConceptualEntity": "fConferencia"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_conferencia.olpn"
+                      },
+                      "Subject": {
+                        "Role": "f_conferencia"
+                      }
+                    },
+                    "ID": "f_conferencias_have_olpns",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_conferencia": {
+                    "Target": {
+                      "Entity": "f_conferencia"
+                    }
+                  },
+                  "f_conferencia.olpn": {
+                    "Target": {
+                      "Entity": "f_conferencia.olpn"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "f_produtividade_has_data_de_finalização_da_oLPN": {
                 "Binding": {
                   "ConceptualEntity": "fProdutividade"
@@ -9023,7 +9543,7 @@
                 },
                 "State": "Generated"
               },
-              "f_produtividade_has_fprodutividade_picking_periodic": {
+              "f_produtividade_has_o_LPN": {
                 "Binding": {
                   "ConceptualEntity": "fProdutividade"
                 },
@@ -9031,13 +9551,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "fprodutividade_picking_periodic"
+                        "Role": "f_produtividade.o_LPN"
                       },
                       "Subject": {
                         "Role": "f_produtividade"
                       }
                     },
-                    "ID": "f_produtividades_have_fprodutividade_picking_periodic",
+                    "ID": "f_produtividades_have_o_LPNs",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -9048,9 +9568,9 @@
                       "Entity": "f_produtividade"
                     }
                   },
-                  "fprodutividade_picking_periodic": {
+                  "f_produtividade.o_LPN": {
                     "Target": {
-                      "Entity": "fprodutividade_picking_periodic"
+                      "Entity": "f_produtividade.o_LPN"
                     }
                   }
                 },
@@ -9676,6 +10196,52 @@
                 },
                 "State": "Generated"
               },
+              "fprodutividade_picking_periodic_has_d_calendario": {
+                "Binding": {
+                  "ConceptualEntity": "fprodutividade_picking_periodic"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "d_calendario"
+                      },
+                      "Subject": {
+                        "Role": "fprodutividade_picking_periodic"
+                      }
+                    },
+                    "ID": "fprodutividade_picking_periodic_have_d_calendarios",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "fprodutividade_picking_periodic"
+                      },
+                      "Subject": {
+                        "Role": "d_calendario"
+                      }
+                    },
+                    "ID": "d_calendarios_have_fprodutividade_picking_periodic",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "d_calendario": {
+                    "Target": {
+                      "Entity": "d_calendario"
+                    }
+                  },
+                  "fprodutividade_picking_periodic": {
+                    "Target": {
+                      "Entity": "fprodutividade_picking_periodic"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "fprodutividade_picking_periodic_has_d_headcount": {
                 "Binding": {
                   "ConceptualEntity": "fprodutividade_picking_periodic"
@@ -9974,6 +10540,98 @@
                   "fprodutividade_picking_periodic.dif_second_task": {
                     "Target": {
                       "Entity": "fprodutividade_picking_periodic.dif_second_task"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "fprodutividade_picking_periodic_has_f_conferencia": {
+                "Binding": {
+                  "ConceptualEntity": "fprodutividade_picking_periodic"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_conferencia"
+                      },
+                      "Subject": {
+                        "Role": "fprodutividade_picking_periodic"
+                      }
+                    },
+                    "ID": "fprodutividade_picking_periodic_have_f_conferencias",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "fprodutividade_picking_periodic"
+                      },
+                      "Subject": {
+                        "Role": "f_conferencia"
+                      }
+                    },
+                    "ID": "f_conferencias_have_fprodutividade_picking_periodic",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_conferencia": {
+                    "Target": {
+                      "Entity": "f_conferencia"
+                    }
+                  },
+                  "fprodutividade_picking_periodic": {
+                    "Target": {
+                      "Entity": "fprodutividade_picking_periodic"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "fprodutividade_picking_periodic_has_f_produtividade": {
+                "Binding": {
+                  "ConceptualEntity": "fprodutividade_picking_periodic"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_produtividade"
+                      },
+                      "Subject": {
+                        "Role": "fprodutividade_picking_periodic"
+                      }
+                    },
+                    "ID": "fprodutividade_picking_periodic_have_f_produtividades",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "fprodutividade_picking_periodic"
+                      },
+                      "Subject": {
+                        "Role": "f_produtividade"
+                      }
+                    },
+                    "ID": "f_produtividades_have_fprodutividade_picking_periodic",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_produtividade": {
+                    "Target": {
+                      "Entity": "f_produtividade"
+                    }
+                  },
+                  "fprodutividade_picking_periodic": {
+                    "Target": {
+                      "Entity": "fprodutividade_picking_periodic"
                     }
                   }
                 },
@@ -10284,39 +10942,6 @@
                   "niveis": {
                     "Target": {
                       "Entity": "niveis"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "fprodutividade_picking_periodic_has_o_LPN": {
-                "Binding": {
-                  "ConceptualEntity": "fprodutividade_picking_periodic"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "fprodutividade_picking_periodic.o_LPN"
-                      },
-                      "Subject": {
-                        "Role": "fprodutividade_picking_periodic"
-                      }
-                    },
-                    "ID": "fprodutividade_picking_periodic_have_o_LPNs",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "fprodutividade_picking_periodic": {
-                    "Target": {
-                      "Entity": "fprodutividade_picking_periodic"
-                    }
-                  },
-                  "fprodutividade_picking_periodic.o_LPN": {
-                    "Target": {
-                      "Entity": "fprodutividade_picking_periodic.o_LPN"
                     }
                   }
                 },
@@ -11114,6 +11739,39 @@
                 },
                 "State": "Generated"
               },
+              "fstatus_olpn_periodic_has_atraso": {
+                "Binding": {
+                  "ConceptualEntity": "fstatus_olpn_periodic"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "fstatus_olpn_periodic.atraso"
+                      },
+                      "Subject": {
+                        "Role": "fstatus_olpn_periodic"
+                      }
+                    },
+                    "ID": "fstatus_olpn_periodic_have_atrasos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fstatus_olpn_periodic": {
+                    "Target": {
+                      "Entity": "fstatus_olpn_periodic"
+                    }
+                  },
+                  "fstatus_olpn_periodic.atraso": {
+                    "Target": {
+                      "Entity": "fstatus_olpn_periodic.atraso"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "fstatus_olpn_periodic_has_d_box": {
                 "Binding": {
                   "ConceptualEntity": "fstatus_olpn_periodic"
@@ -11491,6 +12149,39 @@
                   "fstatus_olpn_periodic.dt_limite": {
                     "Target": {
                       "Entity": "fstatus_olpn_periodic.dt_limite"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "fstatus_olpn_periodic_has_dt_pedido": {
+                "Binding": {
+                  "ConceptualEntity": "fstatus_olpn_periodic"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "fstatus_olpn_periodic.dt_pedido"
+                      },
+                      "Subject": {
+                        "Role": "fstatus_olpn_periodic"
+                      }
+                    },
+                    "ID": "fstatus_olpn_periodic_have_dt_pedidos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fstatus_olpn_periodic": {
+                    "Target": {
+                      "Entity": "fstatus_olpn_periodic"
+                    }
+                  },
+                  "fstatus_olpn_periodic.dt_pedido": {
+                    "Target": {
+                      "Entity": "fstatus_olpn_periodic.dt_pedido"
                     }
                   }
                 },
@@ -12532,6 +13223,39 @@
                 },
                 "State": "Generated"
               },
+              "fstatus_olpn_periodic_has_pedido_venda": {
+                "Binding": {
+                  "ConceptualEntity": "fstatus_olpn_periodic"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "fstatus_olpn_periodic.pedido_venda"
+                      },
+                      "Subject": {
+                        "Role": "fstatus_olpn_periodic"
+                      }
+                    },
+                    "ID": "fstatus_olpn_periodic_have_pedido_venda",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fstatus_olpn_periodic": {
+                    "Target": {
+                      "Entity": "fstatus_olpn_periodic"
+                    }
+                  },
+                  "fstatus_olpn_periodic.pedido_venda": {
+                    "Target": {
+                      "Entity": "fstatus_olpn_periodic.pedido_venda"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "fstatus_olpn_periodic_has_qt_pcs": {
                 "Binding": {
                   "ConceptualEntity": "fstatus_olpn_periodic"
@@ -12730,6 +13454,39 @@
                 },
                 "State": "Generated"
               },
+              "fstatus_olpn_periodic_has_tarefa": {
+                "Binding": {
+                  "ConceptualEntity": "fstatus_olpn_periodic"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "fstatus_olpn_periodic.tarefa"
+                      },
+                      "Subject": {
+                        "Role": "fstatus_olpn_periodic"
+                      }
+                    },
+                    "ID": "fstatus_olpn_periodic_have_tarefas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fstatus_olpn_periodic": {
+                    "Target": {
+                      "Entity": "fstatus_olpn_periodic"
+                    }
+                  },
+                  "fstatus_olpn_periodic.tarefa": {
+                    "Target": {
+                      "Entity": "fstatus_olpn_periodic.tarefa"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "fstatus_olpn_periodic_has_tarefa_status": {
                 "Binding": {
                   "ConceptualEntity": "fstatus_olpn_periodic"
@@ -12862,6 +13619,39 @@
                 },
                 "State": "Generated"
               },
+              "fstatus_olpn_periodic_has_wave": {
+                "Binding": {
+                  "ConceptualEntity": "fstatus_olpn_periodic"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "fstatus_olpn_periodic.wave"
+                      },
+                      "Subject": {
+                        "Role": "fstatus_olpn_periodic"
+                      }
+                    },
+                    "ID": "fstatus_olpn_periodic_have_waves",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "fstatus_olpn_periodic": {
+                    "Target": {
+                      "Entity": "fstatus_olpn_periodic"
+                    }
+                  },
+                  "fstatus_olpn_periodic.wave": {
+                    "Target": {
+                      "Entity": "fstatus_olpn_periodic.wave"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "medida_has_comparacao_media_atual": {
                 "Binding": {
                   "ConceptualEntity": "Medidas"
@@ -12961,39 +13751,6 @@
                 },
                 "State": "Generated"
               },
-              "medida_has_forecasting": {
-                "Binding": {
-                  "ConceptualEntity": "Medidas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "medida.forecasting"
-                      },
-                      "Subject": {
-                        "Role": "medida"
-                      }
-                    },
-                    "ID": "medidas_have_forecasting",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "medida": {
-                    "Target": {
-                      "Entity": "medida"
-                    }
-                  },
-                  "medida.forecasting": {
-                    "Target": {
-                      "Entity": "medida.forecasting"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "medida_has_hora_tratada": {
                 "Binding": {
                   "ConceptualEntity": "Medidas"
@@ -13055,6 +13812,39 @@
                   "medida.media_confe_base": {
                     "Target": {
                       "Entity": "medida.media_confe_base"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medida_has_media_confe_v_2_base": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.media_confe_v_2_base"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_media_confe_v_2_base",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.media_confe_v_2_base": {
+                    "Target": {
+                      "Entity": "medida.media_confe_v_2_base"
                     }
                   }
                 },
@@ -13557,19 +14347,36 @@
         "toTable": "dHeadcount"
       },
       {
-        "name": "17510fab-99b0-1437-5373-c1d3233c9827",
+        "name": "051393d1-d242-3e5a-6db7-32d4f7da50e7",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "oLPN",
+        "fromTable": "fprodutividade_picking_periodic",
+        "toColumn": "oLPN",
+        "toTable": "fProdutividade"
+      },
+      {
+        "name": "b458a6ae-c014-5da9-0549-aa42a1a18b8c",
         "fromColumn": "Data de Finalização da oLPN",
         "fromTable": "fProdutividade",
+        "isActive": false,
         "toColumn": "data",
         "toTable": "dCalendario"
       },
       {
-        "name": "b09175e7-c16b-22e9-8bfd-12e5a180041d",
+        "name": "1ec18366-e2bb-463c-9dd0-463861bf9a95",
+        "crossFilteringBehavior": "bothDirections",
         "fromColumn": "oLPN",
-        "fromTable": "fProdutividade",
-        "toCardinality": "many",
-        "toColumn": "oLPN",
-        "toTable": "fprodutividade_picking_periodic"
+        "fromTable": "fprodutividade_picking_periodic",
+        "toColumn": "OLPN",
+        "toTable": "fConferencia"
+      },
+      {
+        "name": "97fdd980-5dce-80bb-96f6-7fd007c2f850",
+        "fromColumn": "Data LOAD",
+        "fromTable": "fConferencia",
+        "isActive": false,
+        "toColumn": "data",
+        "toTable": "dCalendario"
       }
     ],
     "sourceQueryCulture": "pt-BR",
@@ -13738,13 +14545,10 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
               }
             ],
             "dataType": "double",
+            "formatString": "0",
             "lineageTag": "d0bfbec2-eeba-4967-b82c-a9ade63d3df8",
             "sourceColumn": "Semana do mês",
             "summarizeBy": "sum"
@@ -14505,6 +15309,90 @@
             "lineageTag": "c61ec022-5112-41fb-927d-d4e646bf7008",
             "sourceColumn": "descricao_atividade",
             "summarizeBy": "none"
+          },
+          {
+            "name": "Tarefa",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "87f933f9-4470-4fea-a0b2-5cce94a82e19",
+            "sourceColumn": "Tarefa",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "pedido_venda",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "272287dd-e611-47cc-985b-339eeeeae8aa",
+            "sourceColumn": "pedido_venda",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "dt_pedido",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "7d69c784-749a-433d-98ff-b35ca5a2214d",
+            "sourceColumn": "dt_pedido",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Wave",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "eddb4a96-1c36-4bbf-af29-d9f9233a27b0",
+            "sourceColumn": "Wave",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "atraso",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8f80b569-f41e-4a01-8136-5adf0bc5d931",
+            "sourceColumn": "atraso",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "oLPN",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fd55c3cc-d24f-49a1-8294-8a577bfb54a5",
+            "sourceColumn": "oLPN",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "d15d9ef1-dbc8-461b-a7f3-6e65e1417022",
@@ -15198,6 +16086,7 @@
           },
           {
             "name": "comparacao_media_atual",
+            "displayFolder": "Comparações",
             "expression": [
               "",
               "",
@@ -15266,6 +16155,7 @@
           },
           {
             "name": "comparacao_media_atual_conf",
+            "displayFolder": "Comparações",
             "expression": [
               "",
               "",
@@ -15292,6 +16182,7 @@
           },
           {
             "name": "filter_din",
+            "displayFolder": "Dinâmicos",
             "expression": [
               "",
               "",
@@ -15310,33 +16201,53 @@
                 "value": "{\"isCustom\":true}"
               }
             ],
+            "displayFolder": "Úteis",
             "expression": [
               "",
               "",
-              "[media_tarefa_base]+[media_confe_base]"
+              "[media_tarefa_base]+[media_confe_base]+[media_confe_v2_base]"
             ],
             "formatString": "00:00:00",
             "lineageTag": "3cddfad5-d229-4877-aaae-a8a7a33545fe"
           },
           {
-            "name": "forecasting",
+            "name": "media_confe_v2_base",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ],
+            "displayFolder": "Médias",
             "expression": [
               "",
               "",
-              "VAR _data = ",
-              "MAX(dCalendario[data])",
+              "VAR vhora = ",
+              "SUMX(DISTINCT(fConferencia[dif]),fConferencia[dif])",
               "",
-              "VAR logica = ",
-              "ADDCOLUMNS(",
-              "    CALENDAR(",
-              "        _data+1 , _data +7),",
-              "        \"Expedição Prevista\", [media_diaria_movimentada])",
+              "VAR Total    = ",
+              "DIVIDE(",
+              "    vhora,",
+              "DISTINCTCOUNT(fConferencia[oLPN]))",
+              "",
+              "VAR Horas = INT(Total/3600)",
+              "",
+              "VAR Modulo = MOD(Total,3600)",
+              "",
+              "VAR Minutos = INT(Modulo/60)",
+              "",
+              "VAR Segundos = MOD(Total,60)",
+              "",
+              "VAR Log_final = ",
+              "Horas * 10000 +",
+              "Minutos * 100 +",
+              "Segundos",
               "",
               "RETURN",
-              "logica",
-              ""
+              "Log_final"
             ],
-            "lineageTag": "72b2c08d-cee7-4f00-8d76-5d2811eb1be4"
+            "formatString": "00:00:00",
+            "lineageTag": "31ec2c77-278f-4459-9870-b23dfebe1e3e"
           }
         ],
         "partitions": [
@@ -16261,7 +17172,7 @@
             "formatString": "0",
             "lineageTag": "0e0ea871-6729-46f6-9037-56fda07dbb7a",
             "sourceColumn": "dif_confe",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "239a7357-f497-4fb8-abe1-71fa9c0364f2",
@@ -16279,6 +17190,76 @@
                 "    fProdutividade_ = #\"d03c098a-7e89-4897-8a99-12147927f95b\"{[entity=\"fProdutividade\",version=\"\"]}[Data]",
                 "in",
                 "    fProdutividade_"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "fConferencia",
+        "columns": [
+          {
+            "name": "OLPN",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "030b20cb-14ba-4431-992e-3b1b9722e14f",
+            "sourceColumn": "OLPN",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data LOAD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "3e75f0e6-f1cb-4b28-9ad8-f9640d517f56",
+            "sourceColumn": "Data LOAD",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "dif",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "33341117-deb9-4c4a-acb3-ab8340810e94",
+            "sourceColumn": "dif",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "8196f306-ee99-4504-9317-58696c5433fc",
+        "partitions": [
+          {
+            "name": "fConferencia",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = PowerPlatform.Dataflows(null),",
+                "    Workspaces = Fonte{[Id=\"Workspaces\"]}[Data],",
+                "    #\"ad52077a-cb57-4d00-bc6c-32a23a7d230e\" = Workspaces{[workspaceId=\"ad52077a-cb57-4d00-bc6c-32a23a7d230e\"]}[Data],",
+                "    #\"6a4b54d8-83db-499d-88ae-71aa78e2490d\" = #\"ad52077a-cb57-4d00-bc6c-32a23a7d230e\"{[dataflowId=\"6a4b54d8-83db-499d-88ae-71aa78e2490d\"]}[Data],",
+                "    fConferencia_ = #\"6a4b54d8-83db-499d-88ae-71aa78e2490d\"{[entity=\"fConferencia\",version=\"\"]}[Data]",
+                "in",
+                "    fConferencia_"
               ],
               "type": "m"
             }

@@ -19,7 +19,7 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 4,
+          "zIndex": 13,
           "expandedHeight": 200
         },
         {
@@ -30,11 +30,10 @@
           "nodeIndex": "dCalendario",
           "nodeLineageTag": "5be52927-945a-4435-8b63-242e81b028f3",
           "size": {
-            "height": 72,
+            "height": 200,
             "width": 234
           },
-          "zIndex": 8,
-          "expandedHeight": 200
+          "zIndex": 7
         },
         {
           "location": {
@@ -67,15 +66,15 @@
         {
           "location": {
             "x": 0,
-            "y": 615.85726838637447
+            "y": 579.21460655816315
           },
           "nodeIndex": "dZona",
           "nodeLineageTag": "c52e1011-b1c3-4d7e-b16f-5b47422470ba",
           "size": {
-            "height": 72,
+            "height": 104,
             "width": 234
           },
-          "zIndex": 7,
+          "zIndex": 12,
           "expandedHeight": 128
         },
         {
@@ -89,7 +88,7 @@
             "height": 72,
             "width": 234
           },
-          "zIndex": 9,
+          "zIndex": 8,
           "expandedHeight": 104
         },
         {
@@ -103,7 +102,7 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 3,
+          "zIndex": 4,
           "expandedHeight": 300
         },
         {
@@ -117,7 +116,7 @@
             "height": 72,
             "width": 234
           },
-          "zIndex": 1,
+          "zIndex": 2,
           "expandedHeight": 104
         },
         {
@@ -131,7 +130,7 @@
             "height": 72,
             "width": 234
           },
-          "zIndex": 2,
+          "zIndex": 3,
           "expandedHeight": 128
         },
         {
@@ -145,7 +144,7 @@
             "height": 72,
             "width": 234
           },
-          "zIndex": 10,
+          "zIndex": 9,
           "expandedHeight": 300
         },
         {
@@ -156,11 +155,10 @@
           "nodeIndex": "fprodutividade_picking_periodic",
           "nodeLineageTag": "eef5f1d2-7e8f-4be7-a3ff-75c184af72db",
           "size": {
-            "height": 72,
+            "height": 300,
             "width": 234
           },
-          "zIndex": 11,
-          "expandedHeight": 300
+          "zIndex": 14
         },
         {
           "location": {
@@ -173,22 +171,34 @@
             "height": 128,
             "width": 234
           },
-          "zIndex": 12,
+          "zIndex": 10,
           "expandedHeight": 300
         },
         {
           "location": {
-            "x": 579.35214850336183,
-            "y": 780.79938785483921
+            "x": 890.81477404315774,
+            "y": 694.83006587326668
           },
           "nodeIndex": "fProdutividade",
           "nodeLineageTag": "239a7357-f497-4fb8-abe1-71fa9c0364f2",
           "size": {
-            "height": 72,
+            "height": 176,
             "width": 234
           },
-          "zIndex": 13,
-          "expandedHeight": 176
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 1201.5533621779714,
+            "y": 687.2303161175156
+          },
+          "nodeIndex": "fConferencia",
+          "nodeLineageTag": "8196f306-ee99-4504-9317-58696c5433fc",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 1
         }
       ],
       "name": "Todas as tabelas",
